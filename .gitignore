@@ -1,1 +1,8 @@
+_site
+.DS_Store
+*.swp
+__pycache__
 
+/output_int/*
+broken-links-output/
+gemini-site-output/
