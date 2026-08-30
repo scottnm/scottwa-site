@@ -7,4 +7,6 @@
 
 ## building
 
-`jekyll build`
+```shell
+pwsh _tools/build.ps1
+```

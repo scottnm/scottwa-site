@@ -1,0 +1,24 @@
+<button id="light-dark-button" class="require-js fixed-top-button"></button>
+<script defer>
+    const schemes = ['light dark', 'dark', 'light'];
+    const schemeIcons = ['🌓', '🌙', '☀️'];
+
+    const metaTag = document.querySelector('[name="color-scheme"]');
+    const lightDarkButton = document.getElementById('light-dark-button');
+    const savedScheme = localStorage.getItem("colorScheme") ?? schemes[0];
+
+    let schemeIndex = schemes.indexOf(savedScheme);
+    schemeIndex = schemeIndex >= 0 ? schemeIndex : 0;
+    const setScheme = (schIdx) => {
+        metaTag.setAttribute('content', schemes[schIdx]);
+        lightDarkButton.innerText = schemeIcons[schIdx];
+    };
+
+    setScheme(schemeIndex);
+
+    lightDarkButton.addEventListener('click', function () {
+        schemeIndex = (schemeIndex + 1) % schemes.length
+        setScheme(schemeIndex);
+        localStorage.setItem("colorScheme", schemes[schemeIndex]);
+    });
+</script>
