@@ -1,0 +1,15 @@
+title: scottwa.xyz
+# email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  scott's local WA site.
+url: "https://scottwa.xyz" 
+baseurl: "" # the subpath of your site, e.g. /blog
+exclude:
+  - .vscode
+  - .gitignore
+  - "*.ps1"
+  - "*.py"
+  - _config.yml
+  - README.md
+plugins:
+  - jekyll-tidy
