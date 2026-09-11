@@ -19,7 +19,7 @@ permalink: /book-sale
     <p>ISBN: <a href="https://isbnsearch.org/isbn/{{book.isbn}}">{{book.isbn}}</a></p>
     <p>description: {{book.description}}</p>
     <p>price (negotiable): {{book.price}}</p>
-    <img src="{{book.img_url}}" alt="physical copy of {{book.title}} by {{book.author}}"/>
+    <img src="{{book.img_url}}" alt="physical copy of {{book.title}} by {{book.author}}" style="max-width: 100%"/>
     <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: {{book.title}}">scottwa-xyz@protonmail.com</a></p>
 </div>
 {% endfor %}
