@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png">
+    <link rel="manifest" href="/static/site.webmanifest">
+    <title>scottwa.xyz: Book Sale: Fall 2026</title>
+    <noscript>
+      <style>
+        .require-js {
+            display: none;
+        }
+      </style>
+    </noscript>
+    <script data-goatcounter="https://scottwa.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    <style>
+      .fixed-top-button {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          z-index: 1000;
+
+          padding: 0px 0px;
+          background-color: rgba(0, 0, 0, 0);
+          border: none;
+          border-radius: 0;
+          cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="light-dark-button" class="require-js fixed-top-button"></button>
+    <script defer>
+      const schemes = ['light dark', 'dark', 'light'];
+      const schemeIcons = ['🌓', '🌙', '☀️'];
+
+      const metaTag = document.querySelector('[name="color-scheme"]');
+      const lightDarkButton = document.getElementById('light-dark-button');
+      const savedScheme = localStorage.getItem("colorScheme") ?? schemes[0];
+
+      let schemeIndex = schemes.indexOf(savedScheme);
+      schemeIndex = schemeIndex >= 0 ? schemeIndex : 0;
+      const setScheme = (schIdx) => {
+          metaTag.setAttribute('content', schemes[schIdx]);
+          lightDarkButton.innerText = schemeIcons[schIdx];
+      };
+
+      setScheme(schemeIndex);
+
+      lightDarkButton.addEventListener('click', function () {
+          schemeIndex = (schemeIndex + 1) % schemes.length
+          setScheme(schemeIndex);
+          localStorage.setItem("colorScheme", schemes[schemeIndex]);
+      });
+    </script>
+    <main class="h-entry">
+      <h1 class="p-name">Book Sale: Fall 2026</h1>
+      <span style="font-style: italic"><time class="dt-published" datetime="2026-09-11">2026-09-11</time></span>
+      <article class="e-content">
+        <p>Hi Seattle neighbor!</p>
+        <p>I'd like to find a new home for some of our books. Before donating them or recycling them, let's see if you might want any for yourself!</p>
+        <p>All prices are negotiable.</p>
+        <p>Unless explicitly marked, assume items are still available.</p>
+        <p>Email me for any books you're interested in: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale question">scottwa-xyz@protonmail.com</a></p>
+        <div>
+          <hr/>
+          <h3>Pen Pals</h3>
+          <h4>by Edgar J. Hyde</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781486718757">9781486718757</a></p>
+          <p>description: ghost stories for kids</p>
+          <p>price (negotiable): $1.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_5007.png" alt="physical copy of Pen Pals by Edgar J. Hyde"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Pen Pals">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>Praying with Jane Eyre</h3>
+          <h4>by Vanessa Zoltan</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9780593088005">9780593088005</a></p>
+          <p>description: a book that's part memoir and part guide to reading any book as a sacred text</p>
+          <p>price (negotiable): $3.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_5006.png" alt="physical copy of Praying with Jane Eyre by Vanessa Zoltan"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Praying with Jane Eyre">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>To Carve a Fae Heart</h3>
+          <h4>by Tessonja Odette</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781955960083">9781955960083</a></p>
+          <p>description: To Carve a Fae Heart is an enemies-to-lovers fantasy, perfect for fans of The Cruel Prince, ACOTAR, and Kingdom of the Wicked. If you like snarky fae, brooding royals, sizzling romance, and fierce heroines, you'll love this breathtaking fae fantasy. *NOTE: This series is Upper YA/NA and contains sexual situations, moderate steam, and some violence.</p>
+          <p>price (negotiable): $2.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_5005.png" alt="physical copy of To Carve a Fae Heart by Tessonja Odette"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: To Carve a Fae Heart">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>The Witch Boy</h3>
+          <h4>by Molly Knox Ostertag</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781338089516">9781338089516</a></p>
+          <p>description: middle-grade graphic novel about a boy in a magical family learning witchcraft, challenging family tradition, and going on an adventure.</p>
+          <p>price (negotiable): $1.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_5004.png" alt="physical copy of The Witch Boy by Molly Knox Ostertag"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: The Witch Boy">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>How Stella Learned to Talk</h3>
+          <h4>by Christina Hunger</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9780063046832">9780063046832</a></p>
+          <p>description: An incredible, revolutionary true story and surprisingly simple guide to teaching your dog to talk from speech-language pathologist Christina Hunger, who has taught her dog, Stella, to communicate using simple paw-sized buttons associated with different words.</p>
+          <p>price (negotiable): $2.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_4998.png" alt="physical copy of How Stella Learned to Talk by Christina Hunger"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: How Stella Learned to Talk">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>Divine Rivals</h3>
+          <h4>by Rebecca Ross</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781250857439">9781250857439</a></p>
+          <p>description: When two young rival journalists find love through a magical connection, they must face the depths of hell, in a war among gods, to seal their fate forever.</p>
+          <p>price (negotiable): $1.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_4996.png" alt="physical copy of Divine Rivals by Rebecca Ross"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Divine Rivals">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>Ruthless Vows</h3>
+          <h4>by Rebecca Ross</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781250857453">9781250857453</a></p>
+          <p>description: The epic conclusion to Divine Rivals</p>
+          <p>price (negotiable): $1.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_4993.png" alt="physical copy of Ruthless Vows by Rebecca Ross"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Ruthless Vows">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>So You Want to Talk About Race</h3>
+          <h4>by Ijeoma Oluo</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781580056779">9781580056779</a></p>
+          <p>description: An exploration of 2018's racial landscape with actionable advice for talking about race in uncomfortable contexts and circumstances</p>
+          <p>price (negotiable): $1.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_4995.png" alt="physical copy of So You Want to Talk About Race by Ijeoma Oluo"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: So You Want to Talk About Race">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>Learn You a Haskell for Great Good: A Beginner's Guide</h3>
+          <h4>by Miran Lipovaca</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781593272838">9781593272838</a></p>
+          <p>description: A guided walkthrough through learning the haskell programming language and functional programming paradigms</p>
+          <p>price (negotiable): $5.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_5003.png" alt="physical copy of Learn You a Haskell for Great Good: A Beginner's Guide by Miran Lipovaca"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Learn You a Haskell for Great Good: A Beginner's Guide">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>Hidden Memory</h3>
+          <h4>by Tiffany Shearn</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781737711124">9781737711124</a></p>
+          <p>description: "Elves, fairy, and an epic war between good and evil"</p>
+          <p>price (negotiable): $1.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_5001.png" alt="physical copy of Hidden Memory by Tiffany Shearn"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Hidden Memory">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>Witch Child</h3>
+          <h4>by Celia Rees</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/0763618292">0763618292</a></p>
+          <p>description: "The spellbinding diary of a teenage girl who escapes persecution as a witch--only to face new intolerance in a Puritan settlement. "</p>
+          <p>price (negotiable): $1.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_4999.png" alt="physical copy of Witch Child by Celia Rees"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Witch Child">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>Thug Kitchen: the official cookbook</h3>
+          <h4>by Thug Kitchen</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9781623363581">9781623363581</a></p>
+          <p>description: a cookbook of vegan recipes. I'm not vegan and it was fun to try out some new recipes using ingredients and techniques I hadn't known about before. The writing style is quite tiresome but the content is good.</p>
+          <p>price (negotiable): $3.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_5002.png" alt="physical copy of Thug Kitchen: the official cookbook by Thug Kitchen"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Thug Kitchen: the official cookbook">scottwa-xyz@protonmail.com</a></p>
+        </div>
+        <div>
+          <hr/>
+          <h3>Unix: in a Nutshell</h3>
+          <h4>by Arnold Robbins</h4>
+          <p>ISBN: <a href="https://isbnsearch.org/isbn/9780596100292">9780596100292</a></p>
+          <p>description: A cool desk reference for those who want to learn about or work regularly with unix systems. I got this in my undergrad and it served me well.</p>
+          <p>price (negotiable): $3.00</p>
+          <img src="/static/book-sale-fall-2026/IMG_4994.png" alt="physical copy of Unix: in a Nutshell by Arnold Robbins"/>
+          <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: Unix: in a Nutshell">scottwa-xyz@protonmail.com</a></p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <hr/>
+      <p>For contact, reach me by email: <a href="mailto:scottwa-xyz@protonmail.com">scottwa-xyz@protonmail.com</a></p>
+    </footer>
+  </body>
+</html>

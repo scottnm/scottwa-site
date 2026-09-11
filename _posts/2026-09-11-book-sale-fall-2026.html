@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Book Sale: Fall 2026"
+date:   2026-09-11 08:59:01 -07:00
+permalink: /book-sale
+---
+
+<p>Hi Seattle neighbor!</p>
+<p>I'd like to find a new home for some of our books. Before donating them or recycling them, let's see if you might want any for yourself!</p>
+<p>All prices are negotiable.</p>
+<p>Unless explicitly marked, assume items are still available.</p>
+<p>Email me for any books you're interested in: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale question">scottwa-xyz@protonmail.com</a></p>
+
+{% for book in site.data.book_sale_2026 %}
+<div>
+    <hr/>
+    <h3>{{book.title}}</h3>
+    <h4>by {{book.author}}</h4>
+    <p>ISBN: <a href="https://isbnsearch.org/isbn/{{book.isbn}}">{{book.isbn}}</a></p>
+    <p>description: {{book.description}}</p>
+    <p>price (negotiable): {{book.price}}</p>
+    <img src="{{book.img_url}}" alt="physical copy of {{book.title}} by {{book.author}}"/>
+    <p>Email me for this book: <a href="mailto:scottwa-xyz@protonmail.com?subject=Fall Book Sale: {{book.title}}">scottwa-xyz@protonmail.com</a></p>
+</div>
+{% endfor %}
