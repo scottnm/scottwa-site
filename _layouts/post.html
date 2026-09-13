@@ -6,10 +6,10 @@
 <body>
     {% include page-header.html %}
     <main class="h-entry">
-        {% if page.title %}
+        {% if page.title and page.hide_title == false %}
         <h1 class="p-name">{{page.title}}</h1>
         {% endif %}
-        {% if page.date %}
+        {% if page.date and page.hide_date == false %}
         <span style="font-style: italic"><time class="dt-published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{page.date | date: "%Y-%m-%d"}}</time></span>
         {% endif %}
         <article class="e-content">
